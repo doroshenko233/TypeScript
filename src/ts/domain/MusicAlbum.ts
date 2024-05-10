@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import Buyable from './Buyable';
 
 export default class MusicAlbum implements Buyable {

@@ -9,6 +9,21 @@ test('new card should be empty', () => {
     expect(cart.items.length).toBe(0);
 });
 
+test('Должен создаваться новый альбом', () => {
+  const musicAlbum = new MusicAlbum(1008, 'Meteora', 'Linkin Park', 900);
+  expect(musicAlbum).toBeDefined();
+});
+
+test('Должена создаваться новая книга', () => {
+  const book = new Book(1001, 'War and Piece', 'Leo Tolstoy', 2000, 1225);
+  expect(book).toBeDefined();
+});
+
+test('Должен создаваться новый фильм', () => {
+  const movie = new Movie(1002, 'Мстители', 'IMAX', 'The Avengers', 2012, 'США', 'Avengers Assemble!', ['фантастика', 'боевик', 'фэнтези', 'приключения'], '137 мин. / 02:17', 1100);
+  expect(movie).toBeDefined();
+});
+
 test('Успешно добовляет Book, MusicALbum, Movie', () => {
     
     cart.add(new Book(1001, 'War and Piece', 'Leo Tolstoy', 2000, 1225));
